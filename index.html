@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>Login - Portal</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.webp"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <div class="wave-background">
+      <div class="wave1"></div>
+      <div class="wave2"></div>
+      <div class="wave3"></div>
+      <div class="wave4"></div>
+      <div class="wave5"></div>
+    </div>
+    
+    
+    
+    <div class="background"></div>
+    <div class="all-login">
+      <div class="title">
+        <img
+          src="./assets/favicon.webp"
+          alt="Imagem Pedro & Taís"
+          class="logo"
+        />
+      </div>
+
+      <div class="box-login">
+        <h2>Login</h2>
+        <form>
+          <div class="input-group">
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" id="username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" required place/>
+          </div>
+          <div class="send">
+            <button onclick="login()">Entrar</button>
+            <div class="message" id="message"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Pedro & Taís. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box; /* Para melhor controle de layout */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto branco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin-top: 20px; /* Espaço acima do rodapé */
+  text-align: center;
+  color: #ffffff; /* Cor do texto do rodapé */
+  position: absolute; /* Fixa o rodapé na parte inferior */
+  bottom: 10px; /* Distância do fundo */
+}
+
+/* .title {
+
+} */
+
+.background {
+  position: fixed; /* Fixa o fundo na tela */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: url("../assets/backgroundLogin.avif"); Substitua pelo seu caminho de imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+  background-position: center; /* Centraliza a imagem */
+  filter: blur(8px); /* Aplica o efeito de desfoque */
+  z-index: -1; /* Coloca a camada de fundo atrás de outros elementos */
+}
+
+.title img {
+  width: 60%;
+  border-radius: 300px;
+}
+
+.all-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  
+  background: rgba(160, 160, 160, 0.8);
+
+  padding: 5%;
+  border-radius: 80px;
+  outline: solid white;
+}
+
+.box-login {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.box-login h2{
+  margin-bottom: 20px;
+}
+
+.box-login input {
+  /* width: 100%; */
+  /* max-width: 300px; */
+  padding: 6px 9px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fafafa;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.box-login input:focus {
+  border-color: #00b3d3;
+  box-shadow: 0px 0px 8px rgba(0, 99, 94, 0.5);
+}
+
+.box-login input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.box-login input:hover {
+  border-color: #888;
+}
+
+.box-login button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #adadad;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.box-login button:hover {
+  background-color: #888;
+}
+
+.box-login button:active {
+  background-color: rgba(0, 99, 94, 0.5);
+  transform: scale(0.98);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 7px;
+}
+
+.message.success {
+  color: #4CAF50;
+}
+
+.message.error {
+  color: #f44336;
+}
+
+
+
+
+    /* Camada principal com efeito de ondas */
+    .wave-background {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(to bottom, #333, #555); /* cor de fundo base */
+      overflow: hidden;
+    }
+
+    /* Cada camada de onda com gradientes */
+    .wave1,
+    .wave2,
+    .wave3,
+    .wave4,
+    .wave5 {
+      position: absolute;
+      width: 200%;
+      height: 50vh;
+      border-radius: 50%;
+      left: -50%;
+    }
+
+    /* Configurações de cada camada de onda */
+    .wave1 {
+      bottom: -10%;
+      background: radial-gradient(circle at center, #ffffff, #cccccc, transparent);
+      transform: rotate(-5deg);
+      opacity: 0.7;
+    }
+
+    .wave2 {
+      bottom: -20%;
+      background: radial-gradient(circle at center, #cccccc, #999999, transparent);
+      transform: rotate(5deg);
+      opacity: 0.6;
+    }
+
+    .wave3 {
+      bottom: -30%;
+      background: radial-gradient(circle at center, #999999, #666666, transparent);
+      transform: rotate(-10deg);
+      opacity: 0.5;
+    }
+
+    .wave4 {
+      bottom: -40%;
+      background: radial-gradient(circle at center, #666666, #333333, transparent);
+      transform: rotate(10deg);
+      opacity: 0.4;
+    }
+
+    .wave5 {
+      bottom: -50%;
+      background: radial-gradient(circle at center, #333333, #000000, transparent);
+      transform: rotate(-15deg);
+      opacity: 0.3;
+    }
